@@ -1,5 +1,4 @@
-﻿using BasicInfoAPI.Models;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 
 namespace BasicInfoAPI.Controllers
 {
@@ -8,17 +7,16 @@ namespace BasicInfoAPI.Controllers
     public class InfoController : ControllerBase
     {
         [HttpGet]
-        public async Task<IActionResult> GetBasicInfo()
+        public IActionResult GetBasicInfo()
         {
-            var response = new InfoResponse
+            var response = new Dictionary<string, string>
             {
-                Email = "chibuezegeoffrey@gmail.com",
-                Datetime = DateTime.UtcNow.ToString("yyyy-MM-ddTHH:mm:ssZ"),
-                GithubUrl = "https://github.com/Chibueze-Geoffrey/BasicInfoAPI"
+                { "email", "chibuezegeoffrey@gmail.com" },
+                { "current_datetime", DateTime.UtcNow.ToString("yyyy-MM-ddTHH:mm:ssZ") },
+                { "github_url", "https://github.com/Chibueze-Geoffrey/BasicInfoAPI" }
             };
 
-            return await Task.FromResult(Ok(response));
+            return Ok(response);
         }
-
     }
 }
