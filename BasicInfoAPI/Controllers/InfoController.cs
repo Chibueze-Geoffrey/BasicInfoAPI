@@ -14,7 +14,7 @@ namespace BasicInfoAPI.Controllers
             {
                 Email = "chibuezegeoffrey@gmail.com",
                 CurrentDatetime = DateTime.UtcNow.ToString("yyyy-MM-ddTHH:mm:ssZ"),
-                GithubUrl = "https://github.com/Chibueze-Geoffrey/BasicInfoAPI"
+                GithubUrl =  "https://github.com/Chibueze-Geoffrey/BasicInfoAPI"
             };
 
             return Ok(response);
