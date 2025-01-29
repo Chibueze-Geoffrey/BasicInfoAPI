@@ -7,6 +7,9 @@ This project is a public API that returns basic information about the developer.
 - The current date and time in **ISO 8601** format (UTC).
 - The GitHub URL of the project's codebase.
 
+## Backlink for the project:
+For more information or to hire C# developers, visit [HNG C# Developers Hire Page](https://hng.tech/hire/csharp-developers).
+
 ## Setup Instructions
 
 To run this project locally, follow these steps:
