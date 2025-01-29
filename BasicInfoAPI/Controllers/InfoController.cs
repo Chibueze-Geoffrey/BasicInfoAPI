@@ -8,17 +8,17 @@ namespace BasicInfoAPI.Controllers
     public class InfoController : ControllerBase
     {
         [HttpGet]
-        public IActionResult GetBasicInfo()
+        public async Task<IActionResult> GetBasicInfo()
         {
             var response = new InfoResponse
             {
                 Email = "chibuezegeoffrey@gmail.com",
                 Datetime = DateTime.UtcNow.ToString("yyyy-MM-ddTHH:mm:ssZ"),
-                GithubUrl =  "https://github.com/Chibueze-Geoffrey/BasicInfoAPI"
+                GithubUrl = "https://github.com/Chibueze-Geoffrey/BasicInfoAPI"
             };
 
-            return Ok(response);
+            return await Task.FromResult(Ok(response));
         }
-      
+
     }
 }
