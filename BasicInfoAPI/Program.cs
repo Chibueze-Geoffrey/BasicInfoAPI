@@ -29,8 +29,11 @@ app.UseCors("AllowAll");
     app.UseSwagger();
     app.UseSwaggerUI();
 
-app.MapGet("/swagger", () => Results.Redirect("/swagger/index.html"));
-
+app.MapGet("/", () =>
+{
+    // Display a simple text message guiding the user
+    return Results.Text("Welcome! Please navigate to /api/info to view the API response.");
+});
 
 
 //app.UseHttpsRedirection();
