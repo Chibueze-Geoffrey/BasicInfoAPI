@@ -13,7 +13,7 @@ namespace BasicInfoAPI.Controllers
             var response = new InfoResponse
             {
                 Email = "chibuezegeoffrey@gmail.com",
-                CurrentDatetime = DateTime.UtcNow.ToString("yyyy-MM-ddTHH:mm:ssZ"),
+                Datetime = DateTime.UtcNow.ToString("yyyy-MM-ddTHH:mm:ssZ"),
                 GithubUrl =  "https://github.com/Chibueze-Geoffrey/BasicInfoAPI"
             };
 
