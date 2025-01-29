@@ -14,10 +14,10 @@ namespace BasicInfoAPI.Controllers
             {
                 Email = "chibuezegeoffrey@gmail.com",
                 CurrentDatetime = DateTime.UtcNow.ToString("yyyy-MM-ddTHH:mm:ssZ"),
-                GithubUrl = "https://github.com/yourusername/your-repo" // Replace with your GitHub repository URL
+                GithubUrl = "https://github.com/Chibueze-Geoffrey/BasicInfoAPI"
             };
 
-            return Ok(response); // Returns 200 OK with the response
+            return Ok(response);
         }
       
     }
